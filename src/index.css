@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Grotesk:wght@300..700&display=swap");
+
+@tailwind base;
+
+img {
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+@tailwind components;
+
+.pmr-button {
+  @apply bg-pmr-color hover:bg-pmr-color-hover transition-colors text-white py-3 px-5 rounded-full font-nunito-sans font-bold text-base;
+}
+
+.pmr-hover-link {
+  @apply hover:bg-pmr-color hover:bg-clip-text hover:text-transparent transition-colors;
+}
+
+.section {
+  @apply mt-20 px-4 xxshero:px-10 sm:px-16;
+}
+
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
