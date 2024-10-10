@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
   const navRef = useRef(null);
+  const barRef = useRef(null);
 
   const toggleNavigation = (e) => {
     const nav = navRef.current;
@@ -26,6 +27,30 @@ const Navbar = () => {
 
     return;
   };
+
+  const closeNavigation = () => {
+    if (window.innerWidth >= 1280) {
+      if (navRef.current.classList.contains("flex")) {
+        navRef.current.classList.remove("flex");
+        navRef.current.classList.add("hidden");
+
+        if (!barRef.current.classList.contains("fa-bars")) {
+          barRef.current.classList.remove("fa-x");
+          barRef.current.classList.add("fa-bars");
+        }
+      }
+    }
+
+    return;
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", closeNavigation);
+
+    return () => {
+      window.removeEventListener("resize", closeNavigation);
+    };
+  }, []);
 
   return (
     <nav className="flex justify-between bg-white px-5 py-2 rounded-full items-center relative border">
@@ -61,6 +86,7 @@ const Navbar = () => {
         <i
           className="fa-solid fa-bars text-4xl xshero:text-5xl cursor-pointer xl:hidden"
           onClick={toggleNavigation}
+          ref={barRef}
         />
       </div>
       <ul
