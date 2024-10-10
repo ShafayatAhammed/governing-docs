@@ -23,7 +23,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="px-10 sm:px-16 mdhero:px-32 lgfaq:px-64 space-y-4 mt-20 max-w-[1920px] mx-auto">
+    <div className="px-10 sm:px-16 mdhero:px-32 lgfaq:px-64 space-y-4 mt-20 max-w-[1920px] mx-auto" id="faqs">
       <h2 className="font-bold text-[30px] xshero:text-[38px] md:text-[46px] xxllhero:text-[56px] text-center font-space-grotesk text-pmr-dark">
         Frequently{" "}
         <span className="bg-pmr-color bg-clip-text text-transparent">

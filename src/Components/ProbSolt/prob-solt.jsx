@@ -83,7 +83,7 @@ const ProbSolt = () => {
   const tripleCards = [...cards, ...cards, ...cards];
 
   return (
-    <div className="section max-w-[1920px] mx-auto">
+    <div className="section max-w-[1920px] mx-auto" id="problems-solutions">
       <h2 className="font-bold text-[30px] xshero:text-[46px] xxllhero:text-[56px] text-center xshero:text-start font-space-grotesk text-pmr-dark">
         Problem &{" "}
         <span className="bg-pmr-color bg-clip-text text-transparent">

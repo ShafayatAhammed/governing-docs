@@ -13,19 +13,19 @@ const Footer = () => {
           </h1>
         </a>
         <ul className="font-normal text-base xxllhero:text-xl xxxllhero:text-2xl font-nunito-sans text-pmr-gray hidden xl:flex gap-5 items-center">
-          <a href="#problem-solution" className="pmr-hover-link">
+          <a href="#problems-solutions" className="pmr-hover-link">
             <li>Problem & Solution</li>
           </a>
-          <a href="#problem-solution" className="pmr-hover-link">
+          <a href="#partners" className="pmr-hover-link">
             <li>Industries We Serve</li>
           </a>
-          <a href="#problem-solution" className="pmr-hover-link">
+          <a href="/" className="pmr-hover-link">
             <li>How It Works</li>
           </a>
-          <a href="#problem-solution" className="pmr-hover-link">
+          <a href="#testimonials" className="pmr-hover-link">
             <li>Testimonials</li>
           </a>
-          <a href="#problem-solution" className="pmr-hover-link">
+          <a href="#faqs" className="pmr-hover-link">
             <li>FAQs</li>
           </a>
         </ul>

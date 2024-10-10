@@ -34,7 +34,7 @@ const Partners = () => {
   ];
 
   return (
-    <div className="section max-w-[1920px] mx-auto">
+    <div className="section max-w-[1920px] mx-auto" id="partners">
       <div className="bg-[#E6F9FD] py-5 xshero:pt-8 xshero:pb-12 px-10 rounded-xl">
         <h2 className="font-bold text-[30px] xshero:text-[46px] xxllhero:text-[56px] text-center font-space-grotesk text-pmr-dark">
           Our{" "}

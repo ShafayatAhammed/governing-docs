@@ -44,7 +44,7 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="section p-16 bg-[#F6F6F6]">
+    <div className="section p-16 bg-[#F6F6F6]" id="testimonials">
       <div className="max-w-[1920px] mx-auto">
         <h2 className="font-bold text-[30px] xshero:text-[46px] xxllhero:text-[56px] text-center font-space-grotesk text-pmr-dark">
           Reviews From{" "}
